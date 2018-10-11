@@ -59,6 +59,13 @@
                         <ul class="dropdown-menu" role="menu">
 
                             <li>
+                                <a href="{{ route('users.show', Auth::id()) }}">
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    个人中心
+                                </a>
+                            </li>
+
+                            <li>
                                 <a href="{{ route('users.edit', Auth::id()) }}">
                                     编辑资料
                                 </a>
@@ -76,6 +83,7 @@
                                 </form>
                             </li>
                         </ul>
+
 
 
                     </li>
