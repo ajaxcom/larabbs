@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Handlers\ImageUploadHandler;
 use Illuminate\Http\Request;
+
+use App\Handlers\ImageUploadHandler;
 Use App\Models\User;
 use App\Http\Requests\UserRequest;
 
 class UsersController extends Controller
 {
+
+
     public function __construct()
     {
         $this->middleware('auth', ['except'=>['show']]);
